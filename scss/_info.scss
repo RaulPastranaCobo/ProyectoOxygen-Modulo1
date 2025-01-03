@@ -12,6 +12,9 @@
         width: 80%;
         margin-left: 10%;
         margin-top: 50px;
+        hr{
+            display: none;
+        }
 
         .img4{
             position: relative;
@@ -151,41 +154,57 @@
         
         
         .info1{
-            display: grid;
-            grid-template-areas: 
-            "textinfo1 img4"
-            "textinfo12 img4";
-            grid-template-columns: 50%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
             margin-bottom: 50px;
-            
+            .info11{
+                width: 50%;
+            }
+
+            .info12{
+                width: 50%;
+                
+                hr{
+                    border: 4px solid rgba(251, 59, 100, 1);
+                    width: 60%;
+                    position: relative;
+                    top: -80px;
+                    left: -45px;
+                    display: block;
+                }
+            }
             .textinfo1{
-                grid-area: textinfo1;
+                
                 padding-top: 70px;
                 
             }
 
             .img4{
-                grid-area: img4;
+                
                 width: 386px;
                 height: 219px;
                 position: relative;
-                left: 50px;
-                top: 70px;
+                bottom: 50px;
+                left: 20px;
+                
                 
             }
 
             .textinfo12{
-                grid-area: textinfo12;
+                
                 position: relative;
                 bottom: 50px;
             }
 
             .boxinfo1{
-                top: 1340px;
+                
                 width: 180px;
                 height: 180px;
-                left: 1000px;
-                position: absolute;
+                
+                position: relative;
+                top: 80px;
+                left: 240px;
                 
             }
             
@@ -231,29 +250,47 @@
         .info3{
             display: flex;
             margin-top: 30px;
-            
-            height: 350px;
-            
+            gap: 50px;
+            justify-content: space-between;
+            height: 352px;
+
+            .info31{
+                width: 50%;
+                hr{
+                    border: 4px solid rgba(85, 223, 180, 1);
+                    width: 60%;
+                    position: relative;
+                    left: -40px;
+                    top: 40px;
+                }
+            }
+
+            .info32{
+                width: 40%;
+                
+                border-left: 80px rgba(247, 247, 247, 1) solid;
+            }
             .textinfo3{
                 position: relative;
-                top: -100px;
+                width: 70%;
 
             }
 
             .textinfo32{
                 position: relative;
-                left: -255px;
-                top: 180px;
+                
             }
             .boxinfo3{
-                width: 200%;
+                position: relative;
+                width: 100%;
                 height: 350px;
             }
 
             .img6{
-                position: absolute;
-                top: 2130px;
-                left: 750px;
+                position:relative;
+                top: -250px;
+                left: 30px;
+
             }
         }
     }
