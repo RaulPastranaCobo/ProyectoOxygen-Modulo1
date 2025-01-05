@@ -456,6 +456,13 @@ body {
     top: -200px;
     height: 250px;
   }
+  .info .info2 hr {
+    border: 4px solid rgb(8, 166, 228);
+    width: 400px;
+    position: relative;
+    top: -520px;
+    left: 200px;
+  }
   .info .info3 {
     display: flex;
     margin-top: 30px;
@@ -492,7 +499,7 @@ body {
   .info .info3 .img6 {
     position: relative;
     top: -250px;
-    left: 30px;
+    left: 10%;
   }
 }
 .pricing h1 {
@@ -532,17 +539,37 @@ body {
   margin-left: 50px;
   margin-top: -20px;
 }
+.pricing .pricing1 .textpricing13 {
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.09px;
+  color: rgb(19, 37, 59);
+  margin-left: 50px;
+  margin-top: -30px;
+  padding-bottom: 50px;
+  visibility: hidden;
+}
 .pricing .pricing1 ul {
   list-style-type: none;
   position: absolute;
   left: 169px;
   top: -10px;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .pricing .pricing1 ul li {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .pricing .pricing1 ul img {
   margin-right: 5px;
+  width: 10px;
+  height: 10px;
 }
 .pricing .pricing1 .buttonpricing1 {
   border-radius: 23px;
@@ -551,12 +578,10 @@ body {
   width: 150px;
   text-align: center;
   margin-bottom: -25px;
-  margin-left: 30%;
 }
 .pricing .pricing1 .buttonpricing1 .begin1 {
   padding-top: 15px;
   color: rgb(255, 255, 255);
-  margin-top: 15px;
 }
 .pricing .pricing2 {
   display: inline-block;
@@ -599,14 +624,23 @@ body {
 .pricing .pricing2 ul {
   list-style-type: none;
   position: absolute;
-  left: 220px;
-  top: 3330px;
+  left: 169px;
+  top: -10px;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .pricing .pricing2 ul li {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .pricing .pricing2 ul img {
   margin-right: 5px;
+  width: 10px;
+  height: 10px;
 }
 .pricing .pricing2 .buttonpricing2 {
   border-radius: 23px;
@@ -662,18 +696,23 @@ body {
 .pricing .pricing3 ul {
   list-style-type: none;
   position: absolute;
-  left: 220px;
-  top: 3730px;
+  left: 169px;
+  top: -10px;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .pricing .pricing3 ul li {
   margin-top: 20px;
-  font-family: "Open Sans", serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19.07px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .pricing .pricing3 ul img {
   margin-right: 5px;
+  width: 10px;
+  height: 10px;
 }
 .pricing .pricing3 .buttonpricing3 {
   border-radius: 23px;
@@ -689,27 +728,126 @@ body {
   color: rgb(255, 255, 255);
 }
 
-/*@media  (min-width:1200px){
-    .pricing{
-        display: flex;
-        margin-left: 0%;
-
-        .pricing1{
-            display: flex;
-            width: 33%;
-        }
-
-        .pricing2{
-            display: flex;
-            width: 33%;
-        }
-
-        .pricing3{
-            display: flex;
-            width: 33%;;
-        }
-    }
-}*/
+@media (min-width: 1200px) {
+  .pricing {
+    display: block;
+    margin-left: 0%;
+  }
+  .pricing h1 {
+    position: relative;
+  }
+  .pricing .pricing0 {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-left: 5%;
+    gap: 50px;
+  }
+  .pricing .pricing0 .pricing1 {
+    display: block;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+  }
+  .pricing .pricing0 .pricing1 .pricing11 {
+    width: 100%;
+    position: relative;
+    margin-left: 25%;
+    left: 0;
+    top: 0;
+    padding: 0;
+  }
+  .pricing .pricing0 .pricing1 .pricing11 .textpricing1 {
+    margin-top: 20px;
+  }
+  .pricing .pricing0 .pricing1 .pricing12 {
+    width: 100%;
+  }
+  .pricing .pricing0 .pricing1 .buttonpricing1 {
+    margin-left: 25%;
+    margin-top: 35px;
+  }
+  .pricing .pricing0 .pricing1 ul {
+    position: relative;
+    top: 0;
+    left: 30%;
+  }
+  .pricing .pricing0 .pricing2 {
+    display: block;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .pricing .pricing0 .pricing2 .pricing21 {
+    width: 100%;
+    position: relative;
+    margin-left: 20%;
+    left: 0;
+    top: 0;
+    padding: 0;
+  }
+  .pricing .pricing0 .pricing2 .pricing21 .textpricing2 {
+    margin-top: 20px;
+  }
+  .pricing .pricing0 .pricing2 .pricing22 {
+    width: 100%;
+  }
+  .pricing .pricing0 .pricing2 .buttonpricing2 {
+    margin-left: 25%;
+    margin-top: 35px;
+  }
+  .pricing .pricing0 .pricing2 ul {
+    position: relative;
+    top: 0;
+    left: 30%;
+  }
+  .pricing .pricing0 .pricing3 {
+    display: block;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+  }
+  .pricing .pricing0 .pricing3 .pricing31 {
+    width: 100%;
+    position: relative;
+    margin-left: 20%;
+    left: 0;
+    top: 0;
+    padding: 0;
+  }
+  .pricing .pricing0 .pricing3 .pricing31 .textpricing3 {
+    margin-top: 20px;
+  }
+  .pricing .pricing0 .pricing3 .pricing32 {
+    width: 100%;
+  }
+  .pricing .pricing0 .pricing3 .buttonpricing3 {
+    margin-left: 25%;
+    margin-top: 35px;
+  }
+  .pricing .pricing0 .pricing3 ul {
+    position: relative;
+    top: 0;
+    left: 30%;
+  }
+  .pricing1:hover {
+    transform: scale(1.05);
+    transition: all ease-in 0.3s;
+    box-shadow: 5px 10px 27px 0 rgb(251, 59, 100);
+  }
+  .pricing2:hover {
+    transform: scale(1.05);
+    transition: all ease-in 0.3s;
+    box-shadow: 5px 10px 27px 0 rgba(7, 172, 230, 0.29);
+  }
+  .pricing3:hover {
+    transform: scale(1.05);
+    transition: all ease-in 0.3s;
+    box-shadow: 5px 10px 27px 0 rgb(85, 223, 180);
+  }
+}
 .contact .contact1 h1 {
   font-family: "Raleway", serif;
   font-weight: 400;

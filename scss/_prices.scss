@@ -41,18 +41,41 @@
             
         }
 
+        .textpricing13{
+            font-family: "Raleway",serif;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14.09px;
+            color: rgba(19, 37, 59, 1);
+            margin-left: 50px;
+            margin-top: -30px;
+            padding-bottom: 50px;
+            visibility: hidden;
+            
+        }
+
         ul{
             list-style-type: none;
             position: absolute;
             left: 169px;
             top: -10px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            
 
             li{
                 margin-top: 20px;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
             }
 
             img{
                 margin-right: 5px;
+                width: 10px;
+                height: 10px;
             }
 
         }
@@ -66,12 +89,12 @@
             width: 150px;
             text-align: center;
             margin-bottom: -25px;
-            margin-left: 30%;
+            
             
             .begin1{
                 padding-top: 15px;
                 color:  rgba(255, 255, 255, 1);
-                margin-top: 15px;
+                
             }
         }
     }
@@ -122,17 +145,26 @@
         ul{
             list-style-type: none;
             position: absolute;
-            left: 220px;
-            top: 3330px;
+            left: 169px;
+            top: -10px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            
 
             li{
                 margin-top: 20px;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
             }
 
             img{
                 margin-right: 5px;
+                width: 10px;
+                height: 10px;
             }
-
         }
         .buttonpricing2{
             border-radius: 23px;
@@ -194,19 +226,25 @@
         ul{
             list-style-type: none;
             position: absolute;
-            left: 220px;
-            top: 3730px;
+            left: 169px;
+            top: -10px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            
 
             li{
                 margin-top: 20px;
-                font-family: "Open Sans",serif;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 19.07px;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
             }
 
             img{
                 margin-right: 5px;
+                width: 10px;
+                height: 10px;
             }
 
         }
@@ -232,24 +270,156 @@
     
 }
 
-/*@media  (min-width:1200px){
+@media  (min-width:1200px){
+
     .pricing{
-        display: flex;
+        display: block;
         margin-left: 0%;
 
-        .pricing1{
+        h1{
+            position: relative;
+        }
+
+        .pricing0{
             display: flex;
-            width: 33%;
+            width: 90%;
+            justify-content: center;
+            margin-left: 5%;
+            gap: 50px;
+
+        .pricing1{
+            display:block;
+            width: 30%;
+            margin: 0;
+            padding: 0;
+            
+
+            .pricing11{
+                width: 100%;
+                position: relative;
+                margin-left: 25%;
+                left: 0;
+                top: 0;
+                
+                padding: 0;
+
+                .textpricing1{
+                    margin-top: 20px;
+                }
+                
+            }
+
+            .pricing12{
+                width: 100%;
+            }
+
+            .buttonpricing1{
+                
+                margin-left: 25%;
+                margin-top: 35px;
+            }
+
+            ul{
+                position: relative;
+                top: 0;
+                left: 30%;
+                
+            }
         }
 
         .pricing2{
-            display: flex;
-            width: 33%;
+            display:block;
+            width: 30%;
+            margin: 0;
+            padding: 0;
+            margin: 0;
+            padding:0 ;
+
+            .pricing21{
+                width: 100%;
+                position: relative;
+                margin-left: 20%;
+                left: 0;
+                top: 0;
+                padding: 0;
+                
+                .textpricing2{
+                    margin-top: 20px;
+                }
+                
+            }
+
+            .pricing22{
+                width: 100%;
+            }
+
+            .buttonpricing2{
+                margin-left: 25%;
+                margin-top: 35px;
+            }
+
+            ul{
+                position: relative;
+                top: 0;
+                left: 30%;
+                
+            }
         }
 
         .pricing3{
-            display: flex;
-            width: 33%;;
+            display:block;
+            width: 30%;
+            margin: 0;
+            padding: 0;
+
+            .pricing31{
+                width: 100%;
+                position: relative;
+                margin-left: 20%;
+                left: 0;
+                top: 0;
+                
+                padding: 0;
+                
+                .textpricing3{
+                    margin-top: 20px;
+                }
+            }
+
+            .pricing32{
+                width: 100%;
+            }
+
+            .buttonpricing3{
+                margin-left: 25%;
+                margin-top: 35px;
+            }
+
+            ul{
+                position: relative;
+                top: 0;
+                left: 30%;
+                
+            }
         }
     }
-}*/
+    }
+
+    .pricing1:hover{
+        transform: scale(1.05);
+        transition: all ease-in 0.3s;
+        box-shadow: 5px 10px 27px 0 rgba(251, 59, 100, 1);
+    }
+
+    .pricing2:hover{
+        transform: scale(1.05);
+        transition: all ease-in 0.3s;
+        box-shadow: 5px 10px 27px 0 rgba(7, 172, 230, 0.29);
+    }
+
+    .pricing3:hover{
+        transform: scale(1.05);
+        transition: all ease-in 0.3s;
+        box-shadow: 5px 10px 27px 0 rgba(85, 223, 180, 1);
+    }
+}
