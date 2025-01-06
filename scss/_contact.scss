@@ -1,12 +1,14 @@
 .contact{
     .contact1{
+        margin-left: 20px;
         h1{
             font-family: "Raleway",serif;
             font-weight: 400;
             font-size: 40px;
             line-height: 46.96px;
             color: rgba(0, 0, 0, 1);
-            text-align: center;
+            //text-align: center;
+            margin-left: 10px;
         }
 
         p{
@@ -15,9 +17,10 @@
            font-size: 16px;
            line-height: 22px;
            color: rgba(0, 0, 0, 1); 
-           text-align: center;
+           //text-align: center;
+           margin-left: 10px;
         }
-    }
+    
 
     .contact2{
         margin-top: 30px;
@@ -31,14 +34,18 @@
             margin-left: 10px;
 
             img{
-                margin-right: 10px;
+                margin-right: 15px;
+                margin-bottom: -8px;
             }
         }
     }
 
+}
+
     .contact3{
         width: 80%;
-        p{
+        margin-left: 20px;
+        .name, .email{
             height: 30px;
             font-family: "Open Sans",serif;
             font-weight: 600;
@@ -50,7 +57,7 @@
             border-bottom: 1px solid rgba(149, 152, 154, 1);
             margin-left: 10px;
         }
-    }
+    
 
     .contact4{
         width: 100%;
@@ -63,7 +70,7 @@
             
         }
 
-        p{
+        .consent{
             font-family: "Open Sans",serif;
             font-weight: 400;
             font-size: 12px;
@@ -76,7 +83,7 @@
 
         }
     }
-
+    }
     .contact5{
         width: 100%;
     #Send{
@@ -91,8 +98,44 @@
         font-size: 13px;
         line-height: 17.7px;
         position: relative;
-        left: 30%;
-        border-color: rgba(8, 166, 228, 1);        
+        left: 40%;
+        border-color: rgba(8, 166, 228, 1);  
+        border: none; 
+        margin-bottom: 30px;     
     }
 }
+}
+
+
+@media  (min-width:1200px){
+    .contact{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        margin-top: 100px;
+
+        .contact1{
+            
+            width: 50%;
+            text-align: start;
+            
+            .contact2{
+                display: flex;
+                justify-content: center;
+
+                .emails, .phone{
+                    position: relative;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        .contact3{
+            width: 50%;
+
+            #Send{
+                left: 52%;
+            }
+        }
+    }
 }

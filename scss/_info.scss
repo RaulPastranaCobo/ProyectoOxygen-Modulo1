@@ -2,7 +2,6 @@
     width: 100%;
     background-color: rgba(247, 247, 247, 1);
     display:inline-block;
-    padding-bottom: 20px;
 
     .info1{
         display: block;
@@ -28,8 +27,6 @@
             line-height: 35.22px;
             color: rgba(0, 0, 0, 1);
             height: 72px;
-            //width: 198px;
-            //text-align: center;
             width: 100%;
             margin-left: 10%;
         }
@@ -50,7 +47,6 @@
             font-weight: 400;
             size: 14px;
             line-height: 21px;
-            //text-align: center;
             width: 80%;
             margin-left: 10%;
             padding-bottom: 40px;
@@ -101,6 +97,10 @@
             margin-left: 10%;
             padding-bottom: 40px;
         }
+
+        hr{
+            display: none;
+        }
     }
 
     .info3{
@@ -110,12 +110,14 @@
         background-color: rgba(255, 255, 255, 1);
         width: 80%;
         margin-left: 10%;
-        //padding-bottom: 20px;
 
         .img6{
-            position: absolute;
-            left: 18%;
-            top: 2700px;
+            position: relative;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid rgba(232, 233, 237, 1);
+            background-color: rgba(85, 223, 180, 1);
+            padding-top: 40px;
         }
 
         .textinfo3{
@@ -124,18 +126,9 @@
             font-size: 30px;
             line-height: 35.22px;
             color: rgba(0, 0, 0, 1);
-            //height: 72px;
             width: 60%;
             margin-left: 10%;
             padding-top: 10%;
-        }
-
-        .boxinfo3{
-            width: 100%;
-            height: 195px;
-            border-radius: 5px;
-            border: 1px solid rgba(232, 233, 237, 1);
-            background-color: rgba(85, 223, 180, 1);
         }
 
         .textinfo32{
@@ -144,6 +137,10 @@
             size: 16px;
             line-height: 21.79px;
             margin-left: 10%;
+        }
+
+        hr{
+            display: none;
         }
     }
 }
@@ -287,7 +284,7 @@
                 position: relative;
                 
             }
-            .boxinfo3{
+            /*.boxinfo3{
                 position: relative;
                 width: 100%;
                 height: 350px;
@@ -298,7 +295,7 @@
                 top: -250px;
                 left: 10%;
 
-            }
+            }*/
         }
     }
 }

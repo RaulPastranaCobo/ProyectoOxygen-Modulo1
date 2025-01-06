@@ -260,7 +260,6 @@ body {
   width: 100%;
   background-color: rgb(247, 247, 247);
   display: inline-block;
-  padding-bottom: 20px;
 }
 .info .info1 {
   display: block;
@@ -348,6 +347,9 @@ body {
   margin-left: 10%;
   padding-bottom: 40px;
 }
+.info .info2 hr {
+  display: none;
+}
 .info .info3 {
   display: block;
   border-radius: 5px;
@@ -357,9 +359,12 @@ body {
   margin-left: 10%;
 }
 .info .info3 .img6 {
-  position: absolute;
-  left: 18%;
-  top: 2700px;
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(232, 233, 237);
+  background-color: rgb(85, 223, 180);
+  padding-top: 40px;
 }
 .info .info3 .textinfo3 {
   font-family: "Raleway", serif;
@@ -371,19 +376,15 @@ body {
   margin-left: 10%;
   padding-top: 10%;
 }
-.info .info3 .boxinfo3 {
-  width: 100%;
-  height: 195px;
-  border-radius: 5px;
-  border: 1px solid rgb(232, 233, 237);
-  background-color: rgb(85, 223, 180);
-}
 .info .info3 .textinfo32 {
   font-family: "Open Sans", serif;
   font-weight: 400;
   size: 16px;
   line-height: 21.79px;
   margin-left: 10%;
+}
+.info .info3 hr {
+  display: none;
 }
 
 @media (min-width: 1200px) {
@@ -469,6 +470,18 @@ body {
     gap: 50px;
     justify-content: space-between;
     height: 352px;
+    /*.boxinfo3{
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+
+    .img6{
+        position:relative;
+        top: -250px;
+        left: 10%;
+
+    }*/
   }
   .info .info3 .info31 {
     width: 50%;
@@ -491,24 +504,16 @@ body {
   .info .info3 .textinfo32 {
     position: relative;
   }
-  .info .info3 .boxinfo3 {
-    position: relative;
-    width: 100%;
-    height: 350px;
-  }
-  .info .info3 .img6 {
-    position: relative;
-    top: -250px;
-    left: 10%;
-  }
 }
-.pricing h1 {
+.pricing .h1pricing {
+  text-align: center;
+}
+.pricing .h1pricing h1 {
   font-family: "Raleway", serif;
   font-weight: 400;
   size: 36px;
   line-height: 42.26px;
   color: rgb(0, 0, 0);
-  margin-left: 40%;
 }
 .pricing .pricing1 {
   display: inline-block;
@@ -553,8 +558,8 @@ body {
 .pricing .pricing1 ul {
   list-style-type: none;
   position: absolute;
-  left: 169px;
-  top: -10px;
+  left: 55%;
+  top: 10px;
   display: block;
   margin: 0;
   padding: 0;
@@ -578,6 +583,7 @@ body {
   width: 150px;
   text-align: center;
   margin-bottom: -25px;
+  margin-left: 30%;
 }
 .pricing .pricing1 .buttonpricing1 .begin1 {
   padding-top: 15px;
@@ -624,8 +630,8 @@ body {
 .pricing .pricing2 ul {
   list-style-type: none;
   position: absolute;
-  left: 169px;
-  top: -10px;
+  top: 3380px;
+  left: 55%;
   display: block;
   margin: 0;
   padding: 0;
@@ -696,8 +702,8 @@ body {
 .pricing .pricing3 ul {
   list-style-type: none;
   position: absolute;
-  left: 169px;
-  top: -10px;
+  left: 55%;
+  top: 3780px;
   display: block;
   margin: 0;
   padding: 0;
@@ -742,6 +748,7 @@ body {
     justify-content: center;
     margin-left: 5%;
     gap: 50px;
+    align-items: center;
   }
   .pricing .pricing0 .pricing1 {
     display: block;
@@ -848,13 +855,16 @@ body {
     box-shadow: 5px 10px 27px 0 rgb(85, 223, 180);
   }
 }
+.contact .contact1 {
+  margin-left: 20px;
+}
 .contact .contact1 h1 {
   font-family: "Raleway", serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 46.96px;
   color: rgb(0, 0, 0);
-  text-align: center;
+  margin-left: 10px;
 }
 .contact .contact1 p {
   font-family: "Open Sans", serif;
@@ -862,13 +872,13 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: rgb(0, 0, 0);
-  text-align: center;
+  margin-left: 10px;
 }
-.contact .contact2 {
+.contact .contact1 .contact2 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.contact .contact2 p {
+.contact .contact1 .contact2 p {
   font-family: "Open Sans", serif;
   font-weight: 600;
   font-size: 16px;
@@ -876,13 +886,15 @@ body {
   color: rgb(165, 165, 165);
   margin-left: 10px;
 }
-.contact .contact2 p img {
-  margin-right: 10px;
+.contact .contact1 .contact2 p img {
+  margin-right: 15px;
+  margin-bottom: -8px;
 }
 .contact .contact3 {
   width: 80%;
+  margin-left: 20px;
 }
-.contact .contact3 p {
+.contact .contact3 .name, .contact .contact3 .email {
   height: 30px;
   font-family: "Open Sans", serif;
   font-weight: 600;
@@ -894,17 +906,17 @@ body {
   border-bottom: 1px solid rgb(149, 152, 154);
   margin-left: 10px;
 }
-.contact .contact4 {
+.contact .contact3 .contact4 {
   width: 100%;
 }
-.contact .contact4 input {
+.contact .contact3 .contact4 input {
   accent-color: rgb(255, 255, 255);
   border-radius: 4px;
   border: 1px solid rgb(149, 152, 154);
   margin-top: 20px;
   margin-left: 20px;
 }
-.contact .contact4 p {
+.contact .contact3 .contact4 .consent {
   font-family: "Open Sans", serif;
   font-weight: 400;
   font-size: 12px;
@@ -930,10 +942,38 @@ body {
   font-size: 13px;
   line-height: 17.7px;
   position: relative;
-  left: 30%;
+  left: 40%;
   border-color: rgb(8, 166, 228);
+  border: none;
+  margin-bottom: 30px;
 }
 
+@media (min-width: 1200px) {
+  .contact {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    margin-top: 100px;
+  }
+  .contact .contact1 {
+    width: 50%;
+    text-align: start;
+  }
+  .contact .contact1 .contact2 {
+    display: flex;
+    justify-content: center;
+  }
+  .contact .contact1 .contact2 .emails, .contact .contact1 .contact2 .phone {
+    position: relative;
+    margin-left: 30px;
+  }
+  .contact .contact3 {
+    width: 50%;
+  }
+  .contact .contact3 #Send {
+    left: 52%;
+  }
+}
 .footer {
   width: 100%;
   display: block;
@@ -948,6 +988,7 @@ body {
   color: rgb(8, 166, 228);
   position: relative;
   top: 18px;
+  margin-left: 40px;
 }
 .footer p {
   font-family: "Open Sans", serif;
@@ -956,10 +997,11 @@ body {
   line-height: 14.98px;
   color: rgb(165, 165, 165);
   position: relative;
+  margin-left: 40px;
 }
 .footer img {
   position: relative;
-  left: 65%;
+  left: 75%;
   top: -40px;
   padding-left: 20px;
 }/*# sourceMappingURL=styles.css.map */
