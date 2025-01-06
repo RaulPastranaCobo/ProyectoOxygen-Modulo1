@@ -21,7 +21,7 @@ h1{
     width: 20px;
     height: 12px;
     top: 29px;
-    left: 445px;
+    left: 90%;
     position: absolute;
     
 }
@@ -54,6 +54,11 @@ h1{
                 font-size: 11px;
                 line-height: 15px;
                 letter-spacing: 3.28px;
+                color: rgba(165, 165, 165, 1);
+                
+            }
+
+            .headerlist1{
                 color: rgba(0, 0, 0, 1);
             }
         }

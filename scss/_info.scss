@@ -110,14 +110,16 @@
         background-color: rgba(255, 255, 255, 1);
         width: 80%;
         margin-left: 10%;
+        margin-bottom: 40px;
 
         .img6{
-            position: relative;
+            //position: relative;
             width: 100%;
+            height: 100%;
             border-radius: 5px;
             border: 1px solid rgba(232, 233, 237, 1);
             background-color: rgba(85, 223, 180, 1);
-            padding-top: 40px;
+            //padding-top: 40px;
         }
 
         .textinfo3{
@@ -246,6 +248,7 @@
                 position: relative;
                 top: -520px;
                 left: 200px;
+                display: block;
             }
 
             
@@ -266,6 +269,7 @@
                     position: relative;
                     left: -40px;
                     top: 40px;
+                    display: block;
                 }
             }
 

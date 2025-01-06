@@ -19,7 +19,7 @@
   width: 20px;
   height: 12px;
   top: 29px;
-  left: 445px;
+  left: 90%;
   position: absolute;
 }
 .header .menuDesplegable {
@@ -49,6 +49,9 @@
     font-size: 11px;
     line-height: 15px;
     letter-spacing: 3.28px;
+    color: rgb(165, 165, 165);
+  }
+  .header .menuDesplegable ul .headerlist1 {
     color: rgb(0, 0, 0);
   }
 }
@@ -75,7 +78,7 @@ body {
   line-height: 41.09px;
   font-size: 35px;
   font-weight: 400;
-  margin-left: 30%;
+  margin-left: 0%;
 }
 .opening p {
   font-family: "Open Sans", serif;
@@ -357,14 +360,14 @@ body {
   background-color: rgb(255, 255, 255);
   width: 80%;
   margin-left: 10%;
+  margin-bottom: 40px;
 }
 .info .info3 .img6 {
-  position: relative;
   width: 100%;
+  height: 100%;
   border-radius: 5px;
   border: 1px solid rgb(232, 233, 237);
   background-color: rgb(85, 223, 180);
-  padding-top: 40px;
 }
 .info .info3 .textinfo3 {
   font-family: "Raleway", serif;
@@ -463,6 +466,7 @@ body {
     position: relative;
     top: -520px;
     left: 200px;
+    display: block;
   }
   .info .info3 {
     display: flex;
@@ -492,6 +496,7 @@ body {
     position: relative;
     left: -40px;
     top: 40px;
+    display: block;
   }
   .info .info3 .info32 {
     width: 40%;
