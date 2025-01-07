@@ -65,7 +65,7 @@
             display: block;
             margin: 0;
             padding: 0;
-            
+            box-sizing: border-box;
 
             li{
                 margin-top: 20px;
@@ -148,7 +148,7 @@
         ul{
             list-style-type: none;
             position: absolute;
-            top: 3380px;
+            top: 3360px;
             left: 55%;
             display: block;
             margin: 0;
@@ -231,7 +231,7 @@
             list-style-type: none;
             position: absolute;
             left: 55%;
-            top: 3780px;
+            top: 3760px;
             display: block;
             margin: 0;
             padding: 0;
@@ -294,117 +294,194 @@
             
 
         .pricing1{
-            display:block;
+            display:flex;
+            flex-direction: column;
             width: 30%;
             margin: 0;
             padding: 0;
+            text-align: center;
+            align-items: center;
             
 
             .pricing11{
+                display: flex;
+                flex-direction: column;
                 width: 100%;
                 position: relative;
-                margin-left: 25%;
+                margin-left: 0;
                 left: 0;
                 top: 0;
-                
                 padding: 0;
+                
 
                 .textpricing1{
                     margin-top: 20px;
+                    margin-left: 0;
+                }
+                .textpricing12{
+                    margin-left: 0;
                 }
                 
             }
 
             .pricing12{
                 width: 100%;
+                display: flex;
+                justify-content: center;
+
+                ul{
+                    margin-left: 0px;
+                    left: 0;
+                    li{
+                        margin-left: 0px;
+                        left: 0;
+                    }
+                }
             }
+
+            
 
             .buttonpricing1{
                 
-                margin-left: 25%;
+                margin-left: 0;
                 margin-top: 35px;
+
+                .begin1{
+                    padding-top: 0px;
+                }
             }
 
             ul{
                 position: relative;
                 top: 0;
-                left: 30%;
                 
             }
         }
 
         .pricing2{
-            display:block;
+            display:flex;
+            flex-direction: column;
             width: 30%;
             margin: 0;
             padding: 0;
-            margin: 0;
-            padding:0 ;
+            text-align: center;
+            align-items: center;
 
             .pricing21{
+                display: flex;
+                flex-direction: column;
                 width: 100%;
                 position: relative;
-                margin-left: 20%;
+                margin-left: 0;
                 left: 0;
                 top: 0;
                 padding: 0;
                 
                 .textpricing2{
                     margin-top: 20px;
+                    margin-left: 0;
+                }
+                .textpricing22{
+                    margin-left: 0;
+                }
+                .textpricing23{
+                    margin-left: 0;
                 }
                 
             }
 
             .pricing22{
                 width: 100%;
+                display: flex;
+                justify-content: center;
+
+                ul{
+                    margin-left: 0px;
+                    left: 0;
+                    li{
+                        margin-left: 0px;
+                        left: 0;
+                    }
+                }
             }
 
             .buttonpricing2{
-                margin-left: 25%;
+                
+                margin-left: 0;
                 margin-top: 35px;
+
+                .begin2{
+                    padding-top: 0px;
+                }
             }
 
             ul{
                 position: relative;
                 top: 0;
-                left: 30%;
+                
                 
             }
         }
 
         .pricing3{
-            display:block;
+            display:flex;
+            flex-direction: column;
             width: 30%;
             margin: 0;
             padding: 0;
+            text-align: center;
+            align-items: center;
 
             .pricing31{
+                display: flex;
+                flex-direction: column;
                 width: 100%;
                 position: relative;
-                margin-left: 20%;
+                margin-left: 0;
                 left: 0;
                 top: 0;
-                
                 padding: 0;
                 
                 .textpricing3{
                     margin-top: 20px;
+                    margin-left: 0;
+                }
+                .textpricing32{
+                    margin-left: 0;
+                }
+                .textpricing33{
+                    margin-left: 0;
                 }
             }
 
             .pricing32{
                 width: 100%;
+                display: flex;
+                justify-content: center;
+
+                ul{
+                    margin-left: 0px;
+                    left: 0;
+                    li{
+                        margin-left: 0px;
+                        left: 0;
+                    }
+                }
             }
 
             .buttonpricing3{
-                margin-left: 25%;
+                margin-left: 0;
                 margin-top: 35px;
+
+                .begin3{
+                    padding-top: 0px;
+                }
             }
 
             ul{
                 position: relative;
                 top: 0;
-                left: 30%;
+                
                 
             }
         }

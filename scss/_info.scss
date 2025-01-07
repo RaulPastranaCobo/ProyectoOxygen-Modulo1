@@ -67,6 +67,17 @@
             bottom: 80px;
         }
 
+        
+        .boxinfo2{
+            width: 131.88px;
+            height: 131.7px;
+            border-radius: 50%;
+            background-color: rgba(8, 166, 228, 1);
+            position: relative;
+            left: calc(50% - 65px);
+            top: 50px;
+        }
+        
         .textinfo2{
             font-family: "Raleway",serif;
             font-weight: 400;
@@ -78,15 +89,6 @@
             width: 60%;
         }
 
-        .boxinfo2{
-            width: 131.88px;
-            height: 131.7px;
-            border-radius: 50%;
-            background-color: rgba(8, 166, 228, 1);
-            position: relative;
-            left: calc(50% - 65px);
-            top: 50px;
-        }
 
         .textinfo22{
             font-family: "Open Sans",serif;
@@ -112,15 +114,17 @@
         margin-left: 10%;
         margin-bottom: 40px;
 
-        .img6{
-            //position: relative;
-            width: 100%;
-            height: 100%;
+
+        .boxinfo3{
+            background-color: rgba(85, 223, 180, 1);
             border-radius: 5px;
             border: 1px solid rgba(232, 233, 237, 1);
-            background-color: rgba(85, 223, 180, 1);
-            //padding-top: 40px;
+        .img6{
+            position: relative;
+            padding-top: 40px;
+            margin-left: 10%;
         }
+    }
 
         .textinfo3{
             font-family: "Raleway",serif;
@@ -247,7 +251,7 @@
                 width: 400px;
                 position: relative;
                 top: -520px;
-                left: 200px;
+                left: 180px;
                 display: block;
             }
 
@@ -267,7 +271,7 @@
                     border: 4px solid rgba(85, 223, 180, 1);
                     width: 60%;
                     position: relative;
-                    left: -40px;
+                    left: -10%;
                     top: 40px;
                     display: block;
                 }
@@ -288,18 +292,19 @@
                 position: relative;
                 
             }
-            /*.boxinfo3{
+            .boxinfo3{
+                display: flex;
                 position: relative;
                 width: 100%;
                 height: 350px;
-            }
+                align-items: center;
+                justify-content: center;
+            
 
             .img6{
-                position:relative;
-                top: -250px;
-                left: 10%;
-
-            }*/
+                margin-left: 0;
+            }
+        }
         }
     }
 }

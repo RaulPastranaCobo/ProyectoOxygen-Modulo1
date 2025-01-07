@@ -322,6 +322,15 @@ body {
   left: 33%;
   bottom: 80px;
 }
+.info .info2 .boxinfo2 {
+  width: 131.88px;
+  height: 131.7px;
+  border-radius: 50%;
+  background-color: rgb(8, 166, 228);
+  position: relative;
+  left: calc(50% - 65px);
+  top: 50px;
+}
 .info .info2 .textinfo2 {
   font-family: "Raleway", serif;
   font-weight: 400;
@@ -331,15 +340,6 @@ body {
   height: 72px;
   margin-left: 10%;
   width: 60%;
-}
-.info .info2 .boxinfo2 {
-  width: 131.88px;
-  height: 131.7px;
-  border-radius: 50%;
-  background-color: rgb(8, 166, 228);
-  position: relative;
-  left: calc(50% - 65px);
-  top: 50px;
 }
 .info .info2 .textinfo22 {
   font-family: "Open Sans", serif;
@@ -362,12 +362,15 @@ body {
   margin-left: 10%;
   margin-bottom: 40px;
 }
-.info .info3 .img6 {
-  width: 100%;
-  height: 100%;
+.info .info3 .boxinfo3 {
+  background-color: rgb(85, 223, 180);
   border-radius: 5px;
   border: 1px solid rgb(232, 233, 237);
-  background-color: rgb(85, 223, 180);
+}
+.info .info3 .boxinfo3 .img6 {
+  position: relative;
+  padding-top: 40px;
+  margin-left: 10%;
 }
 .info .info3 .textinfo3 {
   font-family: "Raleway", serif;
@@ -465,7 +468,7 @@ body {
     width: 400px;
     position: relative;
     top: -520px;
-    left: 200px;
+    left: 180px;
     display: block;
   }
   .info .info3 {
@@ -474,18 +477,6 @@ body {
     gap: 50px;
     justify-content: space-between;
     height: 352px;
-    /*.boxinfo3{
-        position: relative;
-        width: 100%;
-        height: 350px;
-    }
-
-    .img6{
-        position:relative;
-        top: -250px;
-        left: 10%;
-
-    }*/
   }
   .info .info3 .info31 {
     width: 50%;
@@ -494,7 +485,7 @@ body {
     border: 4px solid rgb(85, 223, 180);
     width: 60%;
     position: relative;
-    left: -40px;
+    left: -10%;
     top: 40px;
     display: block;
   }
@@ -508,6 +499,17 @@ body {
   }
   .info .info3 .textinfo32 {
     position: relative;
+  }
+  .info .info3 .boxinfo3 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+  }
+  .info .info3 .boxinfo3 .img6 {
+    margin-left: 0;
   }
 }
 .pricing .h1pricing {
@@ -568,6 +570,7 @@ body {
   display: block;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .pricing .pricing1 ul li {
   margin-top: 20px;
@@ -635,7 +638,7 @@ body {
 .pricing .pricing2 ul {
   list-style-type: none;
   position: absolute;
-  top: 3380px;
+  top: 3360px;
   left: 55%;
   display: block;
   margin: 0;
@@ -708,7 +711,7 @@ body {
   list-style-type: none;
   position: absolute;
   left: 55%;
-  top: 3780px;
+  top: 3760px;
   display: block;
   margin: 0;
   padding: 0;
@@ -756,93 +759,160 @@ body {
     align-items: center;
   }
   .pricing .pricing0 .pricing1 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 30%;
     margin: 0;
     padding: 0;
+    text-align: center;
+    align-items: center;
   }
   .pricing .pricing0 .pricing1 .pricing11 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     position: relative;
-    margin-left: 25%;
+    margin-left: 0;
     left: 0;
     top: 0;
     padding: 0;
   }
   .pricing .pricing0 .pricing1 .pricing11 .textpricing1 {
     margin-top: 20px;
+    margin-left: 0;
+  }
+  .pricing .pricing0 .pricing1 .pricing11 .textpricing12 {
+    margin-left: 0;
   }
   .pricing .pricing0 .pricing1 .pricing12 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .pricing .pricing0 .pricing1 .pricing12 ul {
+    margin-left: 0px;
+    left: 0;
+  }
+  .pricing .pricing0 .pricing1 .pricing12 ul li {
+    margin-left: 0px;
+    left: 0;
   }
   .pricing .pricing0 .pricing1 .buttonpricing1 {
-    margin-left: 25%;
+    margin-left: 0;
     margin-top: 35px;
+  }
+  .pricing .pricing0 .pricing1 .buttonpricing1 .begin1 {
+    padding-top: 0px;
   }
   .pricing .pricing0 .pricing1 ul {
     position: relative;
     top: 0;
-    left: 30%;
   }
   .pricing .pricing0 .pricing2 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 30%;
     margin: 0;
     padding: 0;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    align-items: center;
   }
   .pricing .pricing0 .pricing2 .pricing21 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     position: relative;
-    margin-left: 20%;
+    margin-left: 0;
     left: 0;
     top: 0;
     padding: 0;
   }
   .pricing .pricing0 .pricing2 .pricing21 .textpricing2 {
     margin-top: 20px;
+    margin-left: 0;
+  }
+  .pricing .pricing0 .pricing2 .pricing21 .textpricing22 {
+    margin-left: 0;
+  }
+  .pricing .pricing0 .pricing2 .pricing21 .textpricing23 {
+    margin-left: 0;
   }
   .pricing .pricing0 .pricing2 .pricing22 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .pricing .pricing0 .pricing2 .pricing22 ul {
+    margin-left: 0px;
+    left: 0;
+  }
+  .pricing .pricing0 .pricing2 .pricing22 ul li {
+    margin-left: 0px;
+    left: 0;
   }
   .pricing .pricing0 .pricing2 .buttonpricing2 {
-    margin-left: 25%;
+    margin-left: 0;
     margin-top: 35px;
+  }
+  .pricing .pricing0 .pricing2 .buttonpricing2 .begin2 {
+    padding-top: 0px;
   }
   .pricing .pricing0 .pricing2 ul {
     position: relative;
     top: 0;
-    left: 30%;
   }
   .pricing .pricing0 .pricing3 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 30%;
     margin: 0;
     padding: 0;
+    text-align: center;
+    align-items: center;
   }
   .pricing .pricing0 .pricing3 .pricing31 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     position: relative;
-    margin-left: 20%;
+    margin-left: 0;
     left: 0;
     top: 0;
     padding: 0;
   }
   .pricing .pricing0 .pricing3 .pricing31 .textpricing3 {
     margin-top: 20px;
+    margin-left: 0;
+  }
+  .pricing .pricing0 .pricing3 .pricing31 .textpricing32 {
+    margin-left: 0;
+  }
+  .pricing .pricing0 .pricing3 .pricing31 .textpricing33 {
+    margin-left: 0;
   }
   .pricing .pricing0 .pricing3 .pricing32 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .pricing .pricing0 .pricing3 .pricing32 ul {
+    margin-left: 0px;
+    left: 0;
+  }
+  .pricing .pricing0 .pricing3 .pricing32 ul li {
+    margin-left: 0px;
+    left: 0;
   }
   .pricing .pricing0 .pricing3 .buttonpricing3 {
-    margin-left: 25%;
+    margin-left: 0;
     margin-top: 35px;
+  }
+  .pricing .pricing0 .pricing3 .buttonpricing3 .begin3 {
+    padding-top: 0px;
   }
   .pricing .pricing0 .pricing3 ul {
     position: relative;
     top: 0;
-    left: 30%;
   }
   .pricing1:hover {
     transform: scale(1.05);
@@ -966,11 +1036,9 @@ body {
   }
   .contact .contact1 .contact2 {
     display: flex;
-    justify-content: center;
   }
   .contact .contact1 .contact2 .emails, .contact .contact1 .contact2 .phone {
     position: relative;
-    margin-left: 30px;
   }
   .contact .contact3 {
     width: 50%;
@@ -1009,4 +1077,36 @@ body {
   left: 75%;
   top: -40px;
   padding-left: 20px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footer1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer1 h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+  }
+  .footer .footer1 p {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -10px;
+  }
+  .footer .footer2 {
+    margin-right: 10%;
+  }
+  .footer .footer2 img {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
