@@ -294,117 +294,166 @@
             
 
         .pricing1{
-            display:block;
+            display:flex;
+            flex-direction: column;
             width: 30%;
             margin: 0;
             padding: 0;
-            
+            align-items: center;
 
             .pricing11{
                 width: 100%;
                 position: relative;
-                margin-left: 25%;
+                margin: 0;
                 left: 0;
                 top: 0;
-                
+                display: flex;
+                text-align: center;
+                flex-direction: column;
                 padding: 0;
 
                 .textpricing1{
                     margin-top: 20px;
+                    margin-left: 0;
+                }
+
+                .textpricing12{
+                    margin-left: 0;
                 }
                 
             }
 
             .pricing12{
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .buttonpricing1{
-                
-                margin-left: 25%;
                 margin-top: 35px;
+                margin-left: 0;
+                .begin1{
+                    padding-top: 0;
+                }
             }
 
             ul{
                 position: relative;
                 top: 0;
-                left: 30%;
+                left: 0;
                 
             }
         }
 
         .pricing2{
-            display:block;
+            display:flex;
+            flex-direction: column;
             width: 30%;
             margin: 0;
             padding: 0;
-            margin: 0;
-            padding:0 ;
+            align-items: center;
 
             .pricing21{
                 width: 100%;
                 position: relative;
-                margin-left: 20%;
+                margin: 0;
                 left: 0;
                 top: 0;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
                 padding: 0;
                 
                 .textpricing2{
                     margin-top: 20px;
+                    margin-left: 0;
+                }
+
+                .textpricing22{
+                    margin-left: 0;
+                }
+                .textpricing23{
+                    margin-left: 0;
                 }
                 
             }
 
             .pricing22{
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .buttonpricing2{
-                margin-left: 25%;
                 margin-top: 35px;
+                margin-left: 0;
+                .begin2{
+                    padding-top: 0;
+                }
             }
 
             ul{
                 position: relative;
                 top: 0;
-                left: 30%;
+                left: 0;
                 
             }
         }
 
         .pricing3{
-            display:block;
+            display:flex;
+            flex-direction: column;
             width: 30%;
             margin: 0;
             padding: 0;
+            align-items: center;
 
             .pricing31{
                 width: 100%;
                 position: relative;
-                margin-left: 20%;
+                margin: 0;
                 left: 0;
                 top: 0;
-                
+                display: flex;
+                text-align: center;
+                flex-direction: column;
                 padding: 0;
                 
                 .textpricing3{
                     margin-top: 20px;
+                    margin-left: 0;
                 }
+
+                .textpricing32{
+                    margin-left: 0;
+                }
+                .textpricing33{
+                    margin-left: 0;
+                }
+                
             }
 
             .pricing32{
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .buttonpricing3{
-                margin-left: 25%;
                 margin-top: 35px;
+                margin-left: 0;
+                .begin3{
+                    padding-top: 0;
+                }
             }
 
             ul{
                 position: relative;
                 top: 0;
-                left: 30%;
+                left: 0;
                 
             }
         }

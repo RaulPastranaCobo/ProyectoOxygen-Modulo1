@@ -112,16 +112,19 @@
         margin-left: 10%;
         margin-bottom: 40px;
 
+        .boxinfo3{
+            
+            background-color: rgba(85, 223, 180, 1);
+            border: 1px solid rgba(232, 233, 237, 1);
+            border-radius: 5px;
         .img6{
             //position: relative;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            border: 1px solid rgba(232, 233, 237, 1);
-            background-color: rgba(85, 223, 180, 1);
+            width: 80%;
+            height: 70%;
+            margin-top: 40px;
             //padding-top: 40px;
         }
-
+    }
         .textinfo3{
             font-family: "Raleway",serif;
             font-weight: 400;
@@ -247,7 +250,7 @@
                 width: 400px;
                 position: relative;
                 top: -520px;
-                left: 200px;
+                left: 180px;
                 display: block;
             }
 
@@ -288,18 +291,20 @@
                 position: relative;
                 
             }
-            /*.boxinfo3{
-                position: relative;
+            .boxinfo3{
+                    position: relative;
+                    display: flex;
                 width: 100%;
                 height: 350px;
-            }
+                align-items: center;
+            
 
             .img6{
                 position:relative;
-                top: -250px;
-                left: 10%;
+                
 
-            }*/
+            }
+        }
         }
     }
 }
