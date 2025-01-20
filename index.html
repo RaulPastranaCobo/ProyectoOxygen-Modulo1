@@ -14,15 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <h1>OXYGENShop</h1>
-        <img class="menu" src="./images/Menu.png" alt="Menu">
-        <div class="menuDesplegable">
+        <img src="./images/Vector.png" alt="Cross" id="crossMenu">
+        <img class="menu" src="./images/Menu.png" alt="Menu" id="iconoMenuDesplegableId">
+        <div class="menuDesplegable" id="menuDesplegableId">
             <ul>
-                <li class="headerlist1">WHY US</li>
-                <li>BENEFITS</li>
-                <li>PRICES</li>
-                <li>CONTACT</li>
+                <li class="headerlist1"><a href="#statsh1">WHY US</a></li>
+                <li><a href="#info">BENEFITS</a></li>
+                <li><a href="#pricing">PRICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </div>
@@ -37,7 +38,7 @@
         <img src="./images/Background.png" class="background1">
     </div>
 
-    <h1 class="statsh1">The most popular sales platform in country</h1>
+    <h1 class="statsh1" id="statsh1">The most popular sales platform in country</h1>
     <div class="stats">
         <div class="stats1">
             <div class="ellipse1"></div>
@@ -61,7 +62,7 @@
         </div>
     </div>
 
-    <div class="info">
+    <div class="info" id="info">
         <div class="info1">
             <div class="info11">
             <div class="boxinfo1"></div>
@@ -95,7 +96,7 @@
         </div>
     </div>
 
-    <div class="pricing">
+    <div class="pricing" id="pricing">
         <div class="h1pricing">
         <h1>Pricing</h1>
     </div>
@@ -156,7 +157,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact1">
             <h1>Any questions?</h1>
             <p>Leave your email address or call us</p>
@@ -195,4 +196,5 @@
     </div>
     </div>
 </body>
+<script src="./js/project.js"></script>
 </html>
