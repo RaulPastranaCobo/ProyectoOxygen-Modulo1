@@ -19,3 +19,18 @@ function crossMenuList(){
 
 butonMenu.addEventListener('click',dropDownList)
 crossMenu.addEventListener('click',crossMenuList)
+
+const scrollBar=document.getElementById('scrollBar')
+
+function scrollPercentage(){
+    const percentage=document.documentElement.scrollTop
+    const height=document.documentElement.scrollHeight-document.documentElement.clientHeight
+    const widthPercentage=(percentage/height)*100
+    scrollBar.style.width=widthPercentage + "%"
+    
+    
+}
+
+window.onscroll=function(){
+    scrollPercentage()
+}
