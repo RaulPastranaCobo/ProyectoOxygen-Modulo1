@@ -114,18 +114,19 @@
         margin-left: 10%;
         margin-bottom: 40px;
 
-
         .boxinfo3{
+            
             background-color: rgba(85, 223, 180, 1);
-            border-radius: 5px;
             border: 1px solid rgba(232, 233, 237, 1);
+            border-radius: 5px;
         .img6{
-            position: relative;
-            padding-top: 40px;
-            margin-left: 10%;
+            //position: relative;
+            width: 80%;
+            height: 70%;
+            margin-top: 40px;
+            //padding-top: 40px;
         }
     }
-
         .textinfo3{
             font-family: "Raleway",serif;
             font-weight: 400;
@@ -252,6 +253,7 @@
                 position: relative;
                 top: -520px;
                 left: 180px;
+                left: 180px;
                 display: block;
             }
 
@@ -293,15 +295,25 @@
                 
             }
             .boxinfo3{
+                    position: relative;
+                    display: flex;
+            .boxinfo3{
                 display: flex;
                 position: relative;
                 width: 100%;
                 height: 350px;
                 align-items: center;
+            
+                align-items: center;
                 justify-content: center;
             
 
             .img6{
+                position:relative;
+                
+
+            }
+        }
                 margin-left: 0;
             }
         }

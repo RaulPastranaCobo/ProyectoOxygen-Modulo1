@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Oxygen Módulo 1</title>
-    <link rel="stylesheet" href="/scss/styles.css">
+    <link rel="stylesheet" href="./scss/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,15 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <h1>OXYGENShop</h1>
-        <img class="menu" src="/images/Menu.png" alt="Menu">
-        <div class="menuDesplegable">
+        <img src="./images/Vector.png" alt="Cross" id="crossMenu">
+        <img class="menu" src="./images/Menu.png" alt="Menu" id="iconoMenuDesplegableId">
+        <div class="menuDesplegable" id="menuDesplegableId">
             <ul>
-                <li class="headerlist1">WHY US</li>
-                <li>BENEFITS</li>
-                <li>PRICES</li>
-                <li>CONTACT</li>
+                <li class="headerlist1"><a href="#statsh1">WHY US</a></li>
+                <li><a href="#info">BENEFITS</a></li>
+                <li><a href="#pricing">PRICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </div>
@@ -34,38 +35,38 @@
     </div>
 
     <div class="background">
-        <img src="/images/Background.png" class="background1">
+        <img src="./images/Background.png" class="background1">
     </div>
 
-    <h1 class="statsh1">The most popular sales platform in country</h1>
+    <h1 class="statsh1" id="statsh1">The most popular sales platform in country</h1>
     <div class="stats">
         <div class="stats1">
             <div class="ellipse1"></div>
-            <img class="img1" src="/images/Person 2.png" alt="Person">
+            <img class="img1" src="./images/Person 2.png" alt="Person">
             <p class="number1">100000+</p>
             <p class="text1">daily entries</p>
         </div>
 
         <div class="stats2">
             <div class="ellipse2"></div>
-            <img class="img2" src="/images/Eye 2.png" alt="Eye">
+            <img class="img2" src="./images/Eye 2.png" alt="Eye">
             <p class="number2">2000000+</p>
             <p class="text2">seen products every day</p>
         </div>
 
         <div class="stats3">
             <div class="ellipse3"></div>
-            <img class="img3" src="/images/Catalog 2.png" alt="Catalog">
+            <img class="img3" src="./images/Catalog 2.png" alt="Catalog">
             <p class="number3">10000+</p>
             <p class="text3">added posts daily</p>
         </div>
     </div>
 
-    <div class="info">
+    <div class="info" id="info">
         <div class="info1">
             <div class="info11">
             <div class="boxinfo1"></div>
-            <img class="img4" src="/images/Macbook2 2.png" alt="Macbook">
+            <img class="img4" src="./images/Macbook2 2.png" alt="Macbook">
             </div>
             <div class="info12">
             <p class="textinfo1">Be always first</p>
@@ -76,8 +77,8 @@
 
         <div class="info2">
             <div class="boxinfo2"></div>
-            <img class="img5" src="/images/iPhone2 2.png" alt="Iphone">
-            <div class="info22">
+            <img class="img5" src="./images/iPhone2 2.png" alt="Iphone">
+            
             <p class="textinfo2">Your shop is where you are!</p>
             <p class="textinfo22">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <hr>
@@ -91,13 +92,13 @@
             <hr>
         </div>
         <div class="info32">
-            <div class="boxinfo3"><img class="img6" src="/images/Trumpet 2.png" alt="Trumpet"></div>
+            <div class="boxinfo3"><img class="img6" src="./images/Trumpet 2.png" alt="Trumpet"></div>
             
         </div>
         </div>
     </div>
 
-    <div class="pricing">
+    <div class="pricing" id="pricing">
         <div class="h1pricing">
         <h1>Pricing</h1>
     </div>
@@ -110,11 +111,11 @@
             </div>
             <div class="pricing12">
             <ul>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>100 MB HDD</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>1 Subdomain</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>2 E-mails</p></li>
-                <li><img src="/images/Cross.png" alt="Cross"><p>Two year license</p></li>
-                <li><img src="/images/Cross.png" alt="Cross"><p>Full support</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>100 MB HDD</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>1 Subdomain</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>2 E-mails</p></li>
+                <li><img src="./images/Cross.png" alt="Cross"><p>Two year license</p></li>
+                <li><img src="./images/Cross.png" alt="Cross"><p>Full support</p></li>
             </ul>
             </div>
             <div class="buttonpricing1"><p class="begin1">Begin</p></div>
@@ -128,11 +129,11 @@
         </div>
         <div class="pricing22">
             <ul>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>500 MB HDD</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>2 Subdomains</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>5 E-mails</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>One year license</p></li>
-                <li><img src="/images/Cross.png" alt="Cross"><p>Full support</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>500 MB HDD</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>2 Subdomains</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>5 E-mails</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>One year license</p></li>
+                <li><img src="./images/Cross.png" alt="Cross"><p>Full support</p></li>
             </ul>
         </div>
             <div class="buttonpricing2"><p class="begin2">Begin</p></div>
@@ -146,11 +147,11 @@
         </div>
         <div class="pricing32">
             <ul>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>2 GB HDD</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>5 Subdomains</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>20 E-mails</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>Two year license</p></li>
-                <li><img src="/images/Checkbox.png" alt="Checkbox"><p>Full support</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>2 GB HDD</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>5 Subdomains</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>20 E-mails</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>Two year license</p></li>
+                <li><img src="./images/Checkbox.png" alt="Checkbox"><p>Full support</p></li>
             </ul>
         </div>
             <div class="buttonpricing3"><p class="begin3">Begin</p></div>
@@ -158,15 +159,15 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact1">
             <h1>Any questions?</h1>
             <p>Leave your email address or call us</p>
         
 
         <div class="contact2">
-            <p class="emails"><img src="/images/Mail Icon 2.png" alt="Mail">info@bestshop.xyz</p>
-            <p class="phone"><img src="/images/Phone Icon 2.png" alt="Phone">123 456 789</p>
+            <p class="emails"><img src="./images/Mail Icon 2.png" alt="Mail">info@bestshop.xyz</p>
+            <p class="phone"><img src="./images/Phone Icon 2.png" alt="Phone">123 456 789</p>
         </div>
 
     </div>
@@ -187,14 +188,17 @@
     </div>
 
     <div class="footer">
+        
         <div class="footer1">
         <h1>OXYGENShop</h1>
         <p>© 2022 OXYGEN, All Rights Reserved</p>
     </div>
     <div class="footer2">
-        <img src="/images/Twitter (2) 2.png" alt="Twitter">
-        <img src="/images/Facebook (3) 2.png" alt="Facebook">
+        <img src="./images/Twitter (2) 2.png" alt="Twitter">
+        <img src="./images/Facebook (3) 2.png" alt="Facebook">
     </div>
+    
     </div>
 </body>
+<script src="./js/project.js"></script>
 </html>
