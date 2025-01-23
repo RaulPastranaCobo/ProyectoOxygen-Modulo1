@@ -109,6 +109,7 @@ body #scrollDiv {
   background-color: antiquewhite;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 body #scrollDiv #scrollBar {
   background-color: red;
@@ -116,6 +117,21 @@ body #scrollDiv #scrollBar {
   position: sticky;
   top: 0px;
   width: 0%;
+}
+body #toTop {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 90%;
+  left: 92%;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+body #toTop img {
+  height: 100%;
+  width: 100%;
 }
 
 @font-face {
@@ -317,7 +333,6 @@ body #scrollDiv #scrollBar {
   }
 }
 .info {
-  width: 100%;
   background-color: rgb(247, 247, 247);
   display: inline-block;
 }
@@ -1107,9 +1122,16 @@ body #scrollDiv #scrollBar {
   line-height: 14.98px;
   letter-spacing: 3.28px;
   color: rgb(8, 166, 228);
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgb(149, 152, 154);
   margin-left: 10px;
+}
+.contact .contact3 input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 30px;
+}
+.contact .contact3 input:invalid {
+  border-bottom: 1px solid red;
 }
 .contact .contact3 .contact4 {
   width: 100%;

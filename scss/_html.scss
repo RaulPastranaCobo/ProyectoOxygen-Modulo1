@@ -8,6 +8,7 @@ body{
         background-color: antiquewhite;
         position: sticky;
         top: 0px;
+        z-index: 1;
         
         #scrollBar{
             background-color: red;
@@ -15,6 +16,22 @@ body{
             position: sticky;
             top: 0px;
             width: 0%;
+        }
+    }
+
+    #toTop{
+        display: none;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        top: 90%;
+        left: 92%;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+        img{
+            height: 100%;
+            width: 100%;
         }
     }
 }

@@ -53,11 +53,22 @@
             line-height: 14.98px;
             letter-spacing: 3.28px;
             color: rgba(8, 166, 228, 1);
-            padding-bottom: 15px;
-            border-bottom: 1px solid rgba(149, 152, 154, 1);
             margin-left: 10px;
         }
-    
+
+        input{
+            border:none;
+            border-bottom: 1px solid black;
+            width: 100%;
+            height: 30px;
+
+            
+        }
+        input:invalid{
+            border-bottom: 1px solid red;
+        }
+
+        
 
     .contact4{
         width: 100%;
