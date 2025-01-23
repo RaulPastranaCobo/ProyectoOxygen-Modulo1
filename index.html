@@ -17,6 +17,9 @@
     <div id="scrollDiv">
         <div id="scrollBar"></div>
     </div>
+
+    <div id="toTop"><img src="./images/flecha-arriba.png" alt="Flecha"></div>
+    
     <div class="header" id="header">
         
         <h1>OXYGENShop</h1>
@@ -178,17 +181,22 @@
     </div>
 
         <div class="contact3">
-            <p class="name">NAME</p>
-            <p class="email">EMAIL</p>
+            <form id="formulario">
+            <label class="name" for="nameInputId">NAME</label>
+            <input type="text" name="name" id="nameInputId" required pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" minlength="2" maxlength="100">
+            <label class="email" for="emailInputId">EMAIL</label>
+            <input type="email" name="email" id="emailInputId" required pattern=".+\.[a-zA-Z]{2,}">
+            
         
 
         <div class="contact4">
-            <input type="checkbox">
+            <input type="checkbox" required>
             <p class="consent">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
         </div>
         <div class="contact5">
-        <input type="button" name="Send" id="Send" value="Send">
+        <input type="submit" name="Send" id="Send" value="Send">
     </div>
+</form>
 </div>
     </div>
 
