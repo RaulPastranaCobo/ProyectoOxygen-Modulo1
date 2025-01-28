@@ -18,7 +18,19 @@
         <div id="scrollBar"></div>
     </div>
 
-    <div id="toTop"><img src="./images/flecha-arriba.png" alt="Flecha"></div>
+    <dialog id="modal">
+        <div>
+            <img src="./images/cerca.png" alt="Close" id="crossModal">
+            <h2>Subscribe to the best Newsletter</h2>
+        <form id="newsletterForm">
+            <label for="emailPopUpId">E-mail:</label>
+            <input type="email" id="emailPopUpId" pattern=".+\.[a-zA-Z]{2,}">
+            <input type="submit" name="submitNewsletter" id="submitNewsletter" value="Subscribe">
+        </form>
+        </div>
+    </dialog>
+
+    <div id="toTop"><img src="./images/flecha.png" alt="Flecha"></div>
     
     <div class="header" id="header">
         
@@ -93,10 +105,13 @@
         
 
         <div class="info3">
-            
+            <div id="divInfo3">
             <p class="textinfo3">Increase recognition your brand!</p>
             <p class="textinfo32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <hr>
+            </div>
+            
+            
         
         <div class="info32">
             <div class="boxinfo3"><img class="img6" src="./images/Trumpet 2.png" alt="Trumpet"></div>
@@ -109,12 +124,17 @@
     <div class="pricing" id="pricing">
         <div class="h1pricing">
         <h1>Pricing</h1>
+        <select id="selectPricing">
+            <option value="usd" selected>USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+        </select>
     </div>
         <div class="pricing0">
         <div class="pricing1">
             <div class="pricing11">
             <p class="textpricing1">Basic</p>
-            <p class="textpricing12">$0</p>
+            <p class="textpricing12" id="textpricing12">$0</p>
             <p class="textpricing13">Limited offer</p>
             </div>
             <div class="pricing12">
@@ -132,7 +152,7 @@
         <div class="pricing2">
             <div class="pricing21">
             <p class="textpricing2">Professional</p>
-            <p class="textpricing22">$25</p>
+            <p class="textpricing22" id="textpricing22">$25</p>
             <p class="textpricing23">Limited offer</p>
         </div>
         <div class="pricing22">
@@ -150,7 +170,7 @@
         <div class="pricing3">
             <div class="pricing31">
             <p class="textpricing3">Premium</p>
-            <p class="textpricing32">$60</p>
+            <p class="textpricing32" id="textpricing32">$60</p>
             <p class="textpricing33">Limited offer</p>
         </div>
         <div class="pricing32">
@@ -165,6 +185,26 @@
             <div class="buttonpricing3"><p class="begin3">Begin</p></div>
         </div>
         </div>
+    </div>
+    
+    <div id="slider">
+        <div id="left">
+            <img src="./images/flechas (1).png" alt="Flecha izquierda">
+        </div>
+        <div id="images">
+            <img id="imgSlider1" class="imgSlider" src="./images/iso-republic-autumn-foliage-fallen-leaves.jpeg" alt="Img1">
+            <img id="imgSlider2" class="imgSlider" src="./images/iso-republic-autumn-leaf-still-life.jpg" alt="Img2" style="display: none;">
+            <img id="imgSlider3" class="imgSlider" src="./images/picography-autumn-leaves-ground.jpg" alt="Img3" style="display: none;">
+            <img id="imgSlider4" class="imgSlider" src="./images/picography-sunflowers-field-sunset.jpg" alt="Img4" style="display: none;">
+            <div class="imgCircles" id="imgCircles">
+                
+            </div>
+        </div>
+        <div id="right">
+            <img src="./images/flechas.png" alt="Flecha derecha">
+        </div>
+
+
     </div>
 
     <div class="contact" id="contact">

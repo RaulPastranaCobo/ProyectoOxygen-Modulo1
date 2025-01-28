@@ -267,7 +267,7 @@
             justify-content: space-between;
             height: 352px;
 
-            .info31{
+            #divInfo3{
                 width: 50%;
                 hr{
                     border: 4px solid rgba(85, 223, 180, 1);
@@ -297,6 +297,7 @@
             .boxinfo3{
                     position: relative;
                     display: flex;
+                    height: 100%;
             .boxinfo3{
                 display: flex;
                 position: relative;
@@ -310,7 +311,8 @@
 
             .img6{
                 position:relative;
-                
+                height: 100%;
+                margin-top: 20px;
 
             }
         }

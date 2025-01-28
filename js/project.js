@@ -50,23 +50,237 @@ function getToTop(){
 toTop.addEventListener('click',getToTop)
 
 
-const formulario=document.getElementById('formulario')
+const formulario = document.getElementById('formulario');
 
-formulario.addEventListener('submit',evento =>{
-    evento.preventDefault()
-    const nombre=document.getElementById('nameInputId').value
-    const email=document.getElementById('emailInputId').value
-    const datos={
-        nombre:nombre,
-        email:email
-    }
+formulario.addEventListener('submit', evento => {
+    evento.preventDefault();
+
+    const nombre = document.getElementById('nameInputId').value;
+    const email = document.getElementById('emailInputId').value;
+    const datos = {
+        nombre: nombre,
+        email: email
+    };
+
+
 
     fetch("https://jsonplaceholder.typicode.com/posts/1/comments", {
-        method:'POST',
-        body:JSON.stringify(datos)
+        method: 'POST',
+        body: JSON.stringify(datos),
+        headers: {
+            'Content-Type': 'application/json'
+        }
     })
-    .then(respuesta=>respuesta.json())
+    .then(respuesta => {
+        if (!respuesta.ok) {
+            throw new Error('Error en la solicitud: ' + respuesta.status);
+        }
+        return respuesta.json();
+    })
+    .then(data => {
+        console.log('Datos enviados exitosamente:', data);
+        formulario.reset();
+    })
+    .catch(error => {
+        console.error('Hubo un problema con el envío:', error);
+        alert('Ocurrió un error al enviar los datos. Intenta nuevamente.');
+    });
+});
+
+
+function modalFormulario() { 
+    const modal = document.getElementById('modal');
+    const crossModal = document.getElementById('crossModal');
+    const emailModal = document.getElementById('emailPopUpId');
+    const submitButton = document.getElementById('submitNewsletter');
+    const modalContent = document.getElementById('modalContent'); 
+
+    let modalShown = false;
+
     
+    const isNewsletterClosed = sessionStorage.getItem('newsletterClosed') === 'true';
+    const isEmailSent = sessionStorage.getItem('emailSent') === 'true';
+
+    if (isNewsletterClosed || isEmailSent) {
+        return; 
+    }
+
+    const showModal = () => {
+        if (!modalShown) {
+            modal.showModal();
+            modalShown = true;
+        }
+    };
+
+    const timeoutId = setTimeout(showModal, 5000);
+
+    const scrollHandler = () => {
+        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        if (scrollPercentage >= 25) {
+            showModal();
+            clearTimeout(timeoutId);
+            window.removeEventListener('scroll', scrollHandler);
+        }
+    };
+    window.addEventListener('scroll', scrollHandler);
+
+    submitButton.addEventListener('click', async () => {
+        const emailValue = emailModal.value;
+
         
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(emailValue)) {
+            emailModal.style.borderBottom = '1px solid red';
+            return;
+        }
+
+        
+        const datos = { email: emailValue };
+        try {
+            const respuesta = await fetch("https://jsonplaceholder.typicode.com/posts/1/comments", {
+                method: 'POST',
+                body: JSON.stringify(datos),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!respuesta.ok) {
+                throw new Error('Error en la solicitud: ' + respuesta.status);
+            }
+
+            
+            const data = await respuesta.json();
+            console.log('Datos enviados exitosamente:', data);
+
+            
+            modalContent.innerHTML = `<p>Gracias por suscribirte!</p>`;
+            setTimeout(() => {
+                modal.close();
+                sessionStorage.setItem('emailSent', 'true'); 
+            }, 2000);
+
+        } catch (error) {
+            console.error('Hubo un problema con el envío:', error);
+            alert('Ocurrió un error al enviar los datos. Intenta nuevamente.');
+        }
+    });
+
+    crossModal.addEventListener('click', () => {
+        modal.close();
+        sessionStorage.setItem('newsletterClosed', 'true');
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.close();
+            sessionStorage.setItem('newsletterClosed', 'true');
+        }
+    });
+
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            modal.close();
+            sessionStorage.setItem('newsletterClosed', 'true');
+        }
+    });
+}
+modalFormulario();
+
+
+
+const pricingData = {
+    basic: 0,
+    professional: 25,
+    premium: 60
+};
+
+let exchangeRates = {};
+
+
+async function fetchExchangeRates() {
+    try {
+        const response = await fetch(
+            "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json"
+        );
+        const data = await response.json();
+        exchangeRates = data.usd;
+    } catch (error) {
+        console.error("Error fetching exchange rates:", error);
+    }
+}
+
+
+function updatePricing() {
+    const selectedCurrency = document.getElementById("selectPricing").value;
+    const rate = exchangeRates[selectedCurrency] || 1;
+
+    document.getElementById("textpricing12").textContent = `${Math.round(pricingData.basic * rate)} ${selectedCurrency.toUpperCase()}`;
+    document.getElementById("textpricing22").textContent = `${Math.round(pricingData.professional * rate)} ${selectedCurrency.toUpperCase()}`;
+    document.getElementById("textpricing32").textContent = `${Math.round(pricingData.premium * rate)} ${selectedCurrency.toUpperCase()}`;
+}
+
+
+document.getElementById("selectPricing").addEventListener("change", updatePricing);
+
+
+fetchExchangeRates().then(() => {
+    document.getElementById("selectPricing").value = "usd";
+    updatePricing();
+});
+
+function slider(){
+    const images=document.getElementsByClassName('imgSlider')
+    const left=document.getElementById('left')
+    const right=document.getElementById('right')
+    const imgCircles=document.getElementById('imgCircles')
+
+    for(let i=0;i<images.length;i++){
+        const imgCircle = document.createElement('div')
+        imgCircle.classList.add('imgCircle')
+        imgCircles.appendChild(imgCircle)
+    }
+
+    const imgsCircles=document.getElementsByClassName('imgCircle')
+
+    console.log('slider',{images})
+    images[0].style.display='block'
+    imgsCircles[0].style.backgroundColor='rgb(100, 150, 150)'
+
+    let i=0
+
+    const imgLoop=()=>{
+        setInterval(()=>{
+            images[i].style.display = 'none'
+            imgsCircles[i].style.backgroundColor = 'rgba(185, 183, 183, 0.586)'
+            const pass=(i+1)%images.length
+            images[pass].style.display='block'
+            imgsCircles[pass].style.backgroundColor='rgb(185, 183, 183)'
+            i=(i+1)%images.length
+        },3000)
+    }
     
-})
+
+    setTimeout(()=>imgLoop(0),3000)
+
+    left.addEventListener('click', () => {
+        images[i].style.display = 'none'
+        imgsCircles[i].style.background = 'rgba(185, 183, 183, 0.586)'
+        const pass = ((i - 1) + images.length) % images.length
+        images[pass].style.display = 'block'
+        imgsCircles[pass].style.background = 'rgb(185, 183, 183)'
+        i = ((i - 1) + images.length) % images.length 
+    })
+
+    right.addEventListener('click', () => {
+        images[i].style.display = 'none'
+        imgsCircles[i].style.background = 'rgba(185, 183, 183, 0.586)'
+        const pass = (i + 1) % images.length
+        images[pass].style.display = 'block'
+        imgsCircles[pass].style.background = 'rgb(185, 183, 183)'
+        i = (i + 1) % images.length
+    })
+
+}
+
+slider()
