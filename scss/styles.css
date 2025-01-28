@@ -164,6 +164,20 @@ body #modal #newsletterForm #emailPopUpId {
 }
 body #modal #newsletterForm #submitNewsletter {
   border: none;
+  background-color: rgb(8, 166, 228);
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.7px;
+  border-color: rgb(8, 166, 228);
+  border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 body #modal::backdrop {
   background-color: rgba(0, 0, 0, 0.3);

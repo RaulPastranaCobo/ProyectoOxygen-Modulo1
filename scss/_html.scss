@@ -67,6 +67,20 @@ body{
             }
             #submitNewsletter{
                 border: none;
+                background-color: rgba(8, 166, 228, 1);
+                width: 100px;
+                height: 50px;
+                border-radius: 10px;
+                box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+                color: rgba(255, 255, 255, 1);
+                font-family: "Open Sans",serif;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 17.7px;
+                border-color: rgba(8, 166, 228, 1);  
+                border: none; 
+                margin-bottom: 30px; 
+                cursor: pointer;
             }
             
         }
