@@ -1,148 +1,164 @@
-body{
+body {
     margin: 0;
     padding: 0;
     width: 100%;
-    #scrollDiv{
-        width: 100%;
-        height: 10px;
-        background-color: antiquewhite;
-        position: sticky;
-        top: 0px;
-        z-index: 1;
-        
-        #scrollBar{
-            background-color: rgb(8, 166, 228);
-            height: 10px;
-            position: sticky;
-            top: 0px;
-            width: 0%;
-        }
-    }
+}
 
-    #toTop{
-        cursor: pointer;
-        display: none;
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        top: 80%;
-        left: 92%;
-        z-index: 1;
-        margin: 0;
-        padding: 0;
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
+#scrollDiv {
+    width: 100%;
+    height: 10px;
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
 
-    #modal{
-        
-        flex-direction: column;
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 90%;
-        max-width: 400px;
-        position: fixed;
-        align-items: center;
-        text-align: center;
+#scrollDiv #scrollBar {
+    background-color: rgb(8, 166, 228);
+    height: 10px;
+    position: sticky;
+    top: 0px;
+    width: 0%;
+}
 
-        #crossModal{
-            cursor: pointer;
-            position: relative;
-            left: 40%;
-            height: 25px;
-        }
+#toTop {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 80%;
+    left: 88%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
 
-        #newsletterForm{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-            #emailPopUpId{
-                border: none;
-                border-bottom: 1px solid grey;
-            }
-            #submitNewsletter{
-                border: none;
-                background-color: rgba(8, 166, 228, 1);
-                width: 100px;
-                height: 50px;
-                border-radius: 10px;
-                box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
-                color: rgba(255, 255, 255, 1);
-                font-family: "Open Sans",serif;
-                font-weight: 700;
-                font-size: 13px;
-                line-height: 17.7px;
-                border-color: rgba(8, 166, 228, 1);  
-                border: none; 
-                margin-bottom: 30px; 
-                cursor: pointer;
-            }
-            
-        }
-      }
+#toTop img {
+    height: 100%;
+    width: 100%;
+}
 
-    #modal::backdrop{
-        background-color: rgb(0, 0, 0,0.3);
-    }
+#modal {
+    flex-direction: column;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    position: fixed;
+    align-items: center;
+    text-align: center;
 
-    #slider{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        margin-top: 100px;
-        align-items: center;
-        #left{
-            position: relative;
-            left: 20%;
-            cursor: pointer;
-            img{
-            height: 50px;
-            width: 50px;
-            }
-        }
-        #right{
-           position: relative;
-           right:20%;
-           cursor: pointer;
-            img{
-            height: 50px;
-            width: 50px;
-            }
-        }
-
-        .imgSlider{
-            height: 250px;
-            width: 100%;
-        }
-
-        #imgCircles{
-            display: flex;
-            width: 90%;
-            justify-content: space-around;
-            margin-top: 20px;
-            
-            .imgCircle{
-                height: 15px;
-                width: 15px;
-                border-radius: 100%;
-                background-color: rgb(100, 150, 150);
-            }
-        }
+    h2{
+        color: rgba(8, 166, 228, 1);
     }
 }
 
-@media  (min-width:1200px){
-    #slider{
-        .imgSlider{
-            height: 300px;
-            width: 30rem;
-        }
+#modal #crossModal {
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+    height: 25px;
+}
+
+#modal #newsletterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: rgba(8, 166, 228, 1);
+    font-size: 20px;
+}
+
+#modal #newsletterForm #emailPopUpId {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+#modal #newsletterForm #submitNewsletter {
+    border: none;
+    background-color: rgba(8, 166, 228, 1);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17.7px;
+    border-color: rgba(8, 166, 228, 1);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#modal::backdrop {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+#slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#slider #left {
+    position: relative;
+    left: 20%;
+    cursor: pointer;
+}
+
+#slider #left img {
+    height: 50px;
+    width: 50px;
+}
+
+#slider #right {
+    position: relative;
+    right: 20%;
+    cursor: pointer;
+}
+
+#slider #right img {
+    height: 50px;
+    width: 50px;
+}
+
+#slider #images {
+    width: 70%;
+}
+
+#slider #images .imgSlider {
+    height: 250px;
+    width: 100%;
+}
+
+#slider #imgCircles {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#slider #imgCircles .imgCircle {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: rgba(185, 183, 183, 0.3);
+}
+
+@media (min-width: 1200px) {
+    #slider #images {
+        width: 55%;
+    }
+
+    #slider #images .imgSlider {
+        height: 500px;
     }
 }
 

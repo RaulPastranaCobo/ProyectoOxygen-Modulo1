@@ -94,16 +94,8 @@ function modalFormulario() {
     const emailModal = document.getElementById('emailPopUpId');
     const submitButton = document.getElementById('submitNewsletter');
     const modalContent = document.getElementById('modalContent'); 
-
-    let modalShown = false;
-
     
-    const isNewsletterClosed = sessionStorage.getItem('newsletterClosed') === 'true';
-    const isEmailSent = sessionStorage.getItem('emailSent') === 'true';
-
-    if (isNewsletterClosed || isEmailSent) {
-        return; 
-    }
+    let modalShown = false;
 
     const showModal = () => {
         if (!modalShown) {
@@ -156,9 +148,14 @@ function modalFormulario() {
             
             modalContent.innerHTML = `<p>Gracias por suscribirte!</p>`;
             setTimeout(() => {
-                modal.close();
-                sessionStorage.setItem('emailSent', 'true'); 
-            }, 2000);
+                modalContent.innerHTML = `
+                    <button id="crossModal">X</button>
+                    <h2>Subscribe to our newsletter</h2>
+                    <form id="newsletterForm">
+                        <input type="email" id="emailPopUpId" placeholder="Enter your email" required />
+                        <button id="submitNewsletter" type="button">Subscribe</button>
+                    </form>`;
+            }, 2000); 
 
         } catch (error) {
             console.error('Hubo un problema con el envío:', error);
@@ -168,24 +165,27 @@ function modalFormulario() {
 
     crossModal.addEventListener('click', () => {
         modal.close();
-        sessionStorage.setItem('newsletterClosed', 'true');
+        localStorage.setItem('newsletterClosed', 'true');
     });
 
+    
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.close();
-            sessionStorage.setItem('newsletterClosed', 'true');
+            localStorage.setItem('newsletterClosed', 'true');
         }
     });
 
+   
     window.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
             modal.close();
-            sessionStorage.setItem('newsletterClosed', 'true');
+            localStorage.setItem('newsletterClosed', 'true');
         }
     });
 }
 modalFormulario();
+
 
 
 
@@ -245,14 +245,14 @@ function slider(){
 
     console.log('slider',{images})
     images[0].style.display='block'
-    imgsCircles[0].style.backgroundColor='rgb(100, 150, 150)'
+    imgsCircles[0].style.backgroundColor='rgb(185, 183, 183)'
 
     let i=0
 
     const imgLoop=()=>{
         setInterval(()=>{
             images[i].style.display = 'none'
-            imgsCircles[i].style.backgroundColor = 'rgba(185, 183, 183, 0.586)'
+            imgsCircles[i].style.backgroundColor = 'rgba(185, 183, 183, 0.3)'
             const pass=(i+1)%images.length
             images[pass].style.display='block'
             imgsCircles[pass].style.backgroundColor='rgb(185, 183, 183)'
