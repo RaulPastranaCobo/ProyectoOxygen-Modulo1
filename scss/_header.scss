@@ -6,7 +6,6 @@
     height: 70px;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
     
-    
 h1{
     color: #08A6E4;
     font-family: "Raleway";
@@ -52,32 +51,30 @@ h1{
         width: 100%;
         margin-bottom: 20px;
         li{
-            
+            color: rgba(165, 165, 165, 1);
             margin-right: 40px;
             font-family: "Open Sans",serif;
             font-weight: 700;
             font-size: 11px;
             line-height: 15px;
             letter-spacing: 3.28px;
-            color: rgba(165, 165, 165, 0.6);
+            
             a{
+                color: rgba(165, 165, 165, 1);
                 text-decoration: none;
             }
 
-            a:visited{
-                color: black;
-            }
+            
             
         }
 
-        li:hover{
+        a:hover{
+            color: black;
             border-bottom:2px solid rgba(8, 166, 228, 1);
             padding-bottom: 10px;
         }
 
-        .headerlist1{
-            color: rgba(0, 0, 0, 1);
-        }
+        
     }
 }
 

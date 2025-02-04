@@ -21,13 +21,14 @@ butonMenu.addEventListener('click',dropDownList)
 crossMenu.addEventListener('click',crossMenuList)
 
 const scrollBar=document.getElementById('scrollBar')
+const scrollDiv=document.getElementById('scrollDiv')
 
 function scrollPercentage(){
     const percentage=document.documentElement.scrollTop
     const height=document.documentElement.scrollHeight-document.documentElement.clientHeight
     const widthPercentage=(percentage/height)*100
     scrollBar.style.width=widthPercentage + "%"
-    
+
     
 }
 
@@ -38,6 +39,12 @@ window.onscroll=function(){
     }else{
         toTop.style.display='none'
     }
+    if (document.documentElement.scrollTop > 0) {
+        scrollDiv.style.display = "block";
+    } else {
+        scrollDiv.style.display = "none";
+    }
+    
     scrollPercentage()
 }
 
@@ -79,6 +86,7 @@ formulario.addEventListener('submit', evento => {
     })
     .then(data => {
         console.log('Datos enviados exitosamente:', data);
+        alert('Datos enviados correctamente')
         formulario.reset();
     })
     .catch(error => {
@@ -93,7 +101,6 @@ function modalFormulario() {
     const crossModal = document.getElementById('crossModal');
     const emailModal = document.getElementById('emailPopUpId');
     const submitButton = document.getElementById('submitNewsletter');
-    const modalContent = document.getElementById('modalContent'); 
     
     let modalShown = false;
 
@@ -146,20 +153,10 @@ function modalFormulario() {
             console.log('Datos enviados exitosamente:', data);
 
             
-            modalContent.innerHTML = `<p>Gracias por suscribirte!</p>`;
-            setTimeout(() => {
-                modalContent.innerHTML = `
-                    <button id="crossModal">X</button>
-                    <h2>Subscribe to our newsletter</h2>
-                    <form id="newsletterForm">
-                        <input type="email" id="emailPopUpId" placeholder="Enter your email" required />
-                        <button id="submitNewsletter" type="button">Subscribe</button>
-                    </form>`;
-            }, 2000); 
+            alert('Correo enviado exitosamente');
 
         } catch (error) {
             console.error('Hubo un problema con el envío:', error);
-            alert('Ocurrió un error al enviar los datos. Intenta nuevamente.');
         }
     });
 
